@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2>Workshop Python</h2>
+        </section>
+
+				<section>
+          <h3>Um pouco sobre mim</h3>
+          <ul>
+            <p class="fragment" data-fragment-index="1">Engenharia de Minas (4ºano)</p>
+            <p class="fragment" data-fragment-index="2">Trabalho com Marketing na Clickbus</p>
+            <p class="fragment" data-fragment-index="3">Nunca programou antes da faculdade</p>
+            <p class="fragment" data-fragment-index="4">Primeira vez dando esse workshop</p>
+          </ul>
+        </section>
+
+        <section>
+          <h3>O que não esperar do workshop</h3>
+          <ul>
+            <p class="fragment" data-fragment-index="1">Aprender sobre algoritmos</p>
+            <p class="fragment" data-fragment-index="2">Se tornar um expert em Python</p>
+            <p class="fragment" data-fragment-index="3">Deixar a mãe impressionada</p>
+          </ul>
+        </section>
+
+        <section>
+          <h3>O que esperar do workshop</h3>
+          <ul>
+            <p class="fragment" data-fragment-index="1">Usar o Python de verdade</p>
+            <p class="fragment" data-fragment-index="2">Resolver problemas reais</p>
+            <p class="fragment" data-fragment-index="3">Ver muitas fotos de gatinhos</p>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Python 3.x</li>
+            <li>pip (gerenciador de pacotes)</li>
+            <li>IDLE ou qualquer outro editor de texto</li>
+            <li>Prompt de comando (cmd) ou Powershell</li>
+          </ul>
+        </section>
+
+				<section>
+          <h3>Web Scraping</h3>
+          <pre><code class="bash" data-trim data-noescape>
+            $ pip install requests
+            $ pip install beautifulsoup4
+          </code></pre>
+        </section>
+
+				<section>
+          <h3>Requests</h3>
+        </section>
+
+        <section>
+          <h3>Estrutura de url</h3>
+          <pre><code class="html" data-trim data-noescape>
+          <span style="color:red;">esquema</span>://<span style="color:blue;">domínio</span></span>/caminho/<span style="color:#8000FF;">recurso</span>?<span style="color:#FF8000;">query_string</span>
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Exemplo</h3>
+          <pre><code class="python" data-trim data-noescape>
+          import requests
+
+          url = 'https://pixabay.com/pt/photos/'
+
+          payload = {'q': 'gatinhos felizes'}
+
+          r = requests.get(url, params=payload)
+          print(r.url)
+          print(r.status_code)
+          </code></pre>
+        </section>
+
+				<section>
+          <h3>BeautifulSoup</h3>
+        </section>
+
+        <section>
+          <h3>Parser</h3>
+          <p>BeautifulSoup é um <b>Parser</b> de HTML</p>
+        </section>
+
+        <section>
+          <h3>Exemplo</h3>
+          <p>Muita coisa pra digitar, vai pro site deles!!!</p>
+        </section>
+
+        <section>
+          <h3>Mãos à obra</h3>
+        </section>
+
+        <section>
+          <h3>Exercício 1</h3>
+          <p></p>
+        </section>
+
+        <section>
+          <h3>Exercício 2</h3>
+          <p></p>
+        </section>
+
+        <section>
+          <h3>Exercício 3</h3>
+          <p></p>
+        </section>
+
+        <section>
+          <h3>Exercício 4</h3>
+          <p></p>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
