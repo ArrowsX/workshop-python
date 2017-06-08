@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Workshop Python</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -72,7 +72,6 @@
 
 				<section>
           <h3>Web Scraping</h3>
-          <h4>(ou Raspagem de Dados)</h4>
           <pre><code class="bash" data-trim data-noescape>
             $ pip install requests
             $ pip install beautifulsoup4
@@ -90,30 +89,16 @@
           </code></pre>
         </section>
 
-        <section>
-          <h3>Exemplo</h3>
-          <pre><code class="python" data-trim data-noescape>
-          import requests
-
-          url = 'https://pixabay.com/pt/photos/'
-          payload = {'q': 'gatinhos felizes'}
-
-          r = requests.get(url, params=payload)
-          print(r.status_code)
-          </code></pre>
-        </section>
-
 				<section>
-          <h3>BeautifulSoup</h3>
+          <h3>Beautiful Soup</h3>
         </section>
 
         <section>
-          <h3>O que é HTML?</h3>
+          <h3>Documento HTML</h3>
           <ul>
             <li>Abreviação para Hyper Text Markup Language.</li>
-            <li>Serve para estruturar as páginas da internet.</li>
-            <li>Podem ser diretamente interpretadas pelo browser.</li>
-            <li>BeautifulSoup é um <b>parser</b> de HTML</li>
+            <li>Composto por <i>tags</i>, que podem ter atributos</li>
+            <li>Beautiful Soup é um <b>parser</b> de HTML</li>
           </ul>
         </section>
 
@@ -128,12 +113,12 @@
 
         <section>
           <h3>Exercício 2</h3>
-          <p>Baixar as 5 primeiras imagens de gatinhos (ou qualquer coisa da sua escolha) do site <i>https://pixabay.com/pt/photos</i></p>
+          <p>Baixar as 5 primeiras imagens de gatinhos do site <i>https://pixabay.com/pt/photos</i></p>
         </section>
 
         <section>
           <h3>Exercício 3</h3>
-          <p>Encontrar todos os últimos episódios de mangá lançados na home do site <i>http://mangapark.me</i></p>
+          <p>Encontrar os 10 últimos capítulos de mangá lançados no site <i>http://mangapark.me</i></p>
         </section>
 
         <section>
