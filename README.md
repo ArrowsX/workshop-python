@@ -13,6 +13,20 @@ Instale as bibliotecas necessárias
 $ pip3 install -r requirements.txt
 ```
 
+## Acesso à apresentação
+Windows
+```
+$ start html_presentation/index.html
+```
+MacOS
+```
+$ open html_presentation/index.html
+```
+Linux
+```
+$ xdg-open html_presentation/index.html
+```
+
 ## Acesso ao código fonte dos exercícios
 Existem dois jeitos para acessar os exercícios:
 
